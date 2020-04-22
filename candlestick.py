@@ -77,8 +77,7 @@ name_stock = input_file.split("_");
 name_stock = name_stock[len(name_stock)-1];
 name_stock = name_stock.strip(".csv");
 
-#for i in range(0, data.shape[0]-day+1):
-for i in range(0, 2):
+for i in range(0, data.shape[0]-day+1):
     main_plot=name_stock+", "+"".join(data.iloc[i:(i+day), :]["Date"].iloc[0].split("-"))+"-"+"".join(data.iloc[i:(i+day), :]["Date"].iloc[day-1].split("-"))
     output_name = name_stock+"-"+"".join(data.iloc[i:(i+day), :]["Date"].iloc[day-1].split("-"));
     fig, ax = plt.subplots(figsize=(pixel_width/96, pixel_height/96), dpi=96)
