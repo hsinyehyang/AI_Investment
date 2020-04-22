@@ -5,12 +5,12 @@ library(quantmod)
 # ===================================================================================
 # ===================================================================== Basic Setting
 # ===================================================================================
-data.path      = 'D:/TW_Stock_PriceData/'; dir.create(data.path)
+data.path      = '/Users/andy/TW_Stock_PriceData/'; dir.create(data.path)
 # ===================================================================================
 # =================================================================== Stock Code List
 # ===================================================================================
 data.colname.vt = c('Open', 'High', 'Low', 'Close', 'Volume', 'Adjusted')
-Git_path   = 'D:/Git_Project/'
+Git_path   = '/Users/andy/Git_Project/'
 Project_nm = 'AI_Investment'
 code.vt1 = paste0(read.csv(paste0(Git_path, Project_nm, '/TW_Stock_Code1.csv'), 
 				  stringsAsFactors = F)$Code, '.TW')
