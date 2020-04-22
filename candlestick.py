@@ -13,12 +13,12 @@ import matplotlib.pyplot as plt;
 import mpl_finance as mpf
 
 #arguments
-input_file = "C:/Users/nhri/Desktop/KLine/TW_STOCK_0050.csv";
-output_file = "C:/Users/nhri/Desktop/KLine/result/";
-day = 20;  #default
-pixel_width = 224;  #default
-pixel_height = 224;  #default
-begin = None; #string, ex: "1991-02-07"; default is the first date in your data
+input_file = "/Users/andy/TW_Stock_PriceData/TW_STOCK_0050.csv";
+output_file = "/Users/andy/result/";
+day = 80;  #default
+pixel_width = 640;  #default
+pixel_height = 320;  #default
+begin = '2018-06-01'; #string, ex: "1991-02-07"; default is the first date in your data
 end = None; #string, ex: "1991-02-07"; default is the last date in your data
 show_date = False;  #default
 show_margin = False;  #default
