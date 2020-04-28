@@ -14,7 +14,7 @@ def execute(stock_id, basic_type, file_path):
     import random
     time.sleep(random.randint(10,15))
     # to crawl
-    import GoodInfoCrawler as gc
+    import Class_GoodInfoCrawler as gc
     result = gc.goodinfo_crawler(stock_id, basic_type)
     #from GoodInfoCrawler import *
     #result = goodinfo_crawler(stock_id, basic_type)
